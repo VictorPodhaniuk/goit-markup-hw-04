@@ -245,7 +245,21 @@ ol {
 
 /*------------HERO------------*/
 .hero {
+  background-image: linear-gradient(
+    to right, 
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url("../image/Img.jpg"); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: var(--secondary-background-color);
+  
+  max-width: 1600px;
+  height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -430,33 +444,49 @@ padding: 10px 32px;
 
 .icon-list {
 display: flex;
-}
+justify-content: space-between;
+gap: 10px;
 
-.icon-list + .icon-list {
-  gap: 10px;
 }
 
 .icon-item {
   display: flex;
   width: 44px;
   height: 44px;
-
 }
 
 .icon-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
 
   margin-bottom: var(--card-set-gap);
   width: 44px;
   height: 44px;
-
+  
 }
 
-.icon-team {
+.icon-link:hover,
+.icon-link:focus {
+  background-color: var(--blue-color);
+}
+
+.icon-social-team {
   fill: var(--icon-color);
+  width: 20px;
+  height: 20px;
 }
+
+.icon-social-team:focus,
+.icon-social-team:hover {
+  fill: var(--white-color);
+}
+
+/*----------Regular customers------------------*/
+
+
+
 /*----------------------------------ПОРТФОЛІО--------------------------------*/
 
 /*----------section main-------------*/
