@@ -464,23 +464,19 @@ gap: 10px;
   margin-bottom: var(--card-set-gap);
   width: 44px;
   height: 44px;
-  
+  color: var(--icon-color);
 }
 
 .icon-link:hover,
 .icon-link:focus {
   background-color: var(--blue-color);
+  color: var(--white-color);
 }
 
 .icon-social-team {
-  fill: var(--icon-color);
+  fill: currentColor;
   width: 20px;
   height: 20px;
-}
-
-.icon-social-team:focus,
-.icon-social-team:hover {
-  fill: var(--white-color);
 }
 
 /*----------Regular customers------------------*/
